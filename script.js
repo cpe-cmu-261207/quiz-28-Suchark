@@ -13,6 +13,6 @@ element.style.display = " ";
 
 async function callApi() {
   const resp = await axios.get("https://randomuser.me/api/");
-  Imgpro.data.picture.large;
-  Pname.data.name;
+  Imgpro.src = resp.data.picture.large;
+  Pname.src = resp.data.name;
 }
